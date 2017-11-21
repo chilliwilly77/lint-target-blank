@@ -1,0 +1,23 @@
+<html>
+<head>
+  <script type="text/javascript" src="https://somewhere.com"></script>
+  <title>page with target="_blank" and no rel="noopener noreferrer"</title>
+</head>
+<body>
+<div>
+  <!--OK resource-->
+  <a href="https://this.domain/resource" target="_blank" rel="noreferrer nofollow"></a>
+  <a href="http://remote.com/resource" target="_blank" rel="noreferrer nofollow"></a>
+  <!--Warning resource-->
+  <a href="/resource" target="_blank"></a>
+  <a href="https://this.domain/resource" target="_blank" rel=""></a>
+  <a href="https://this.domain/resource" target="_blank" rel="noreferrer"></a>
+  <a href="https://this.domain/resource" target="_blank" rel="nofollow"></a>
+  <!--Error resource-->
+  <a href="https://remote.com/resource" target="_blank" rel=""></a>
+  <a href="http://remote.com/resource" target="_blank" rel="noreferrer"></a>
+  <a href="http://remote.com/resource" target="_blank" rel="nofollow"></a>
+</div>
+</div>
+</body>
+</html>
