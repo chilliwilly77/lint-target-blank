@@ -1,6 +1,6 @@
 {
   "name": "lint-target-blank",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "lint for target blank vulnrability",
   "main": "index.js",
   "scripts": {
